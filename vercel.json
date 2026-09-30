@@ -1,0 +1,65 @@
+{
+  "crons": [
+    {
+      "path": "/api/finance-sync",
+      "schedule": "0 22 * * 0"
+    },
+    {
+      "path": "/api/reminders-send",
+      "schedule": "30 21 * * *"
+    },
+    {
+      "path": "/api/xero-sync",
+      "schedule": "0 20 * * *"
+    },
+    {
+      "path": "/api/bank-feed",
+      "schedule": "0 20 * * *"
+    },
+    {
+      "path": "/api/weekly-digest",
+      "schedule": "30 8 * * 0"
+    },
+    {
+      "path": "/api/xero-match",
+      "schedule": "15 20 * * *"
+    },
+    {
+      "path": "/api/event-reminder",
+      "schedule": "*/15 * * * *"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/sw.js",
+      "headers": [
+        {
+          "key": "Service-Worker-Allowed",
+          "value": "/"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
+        }
+      ]
+    },
+    {
+      "source": "/data/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
+        }
+      ]
+    },
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    }
+  ]
+}

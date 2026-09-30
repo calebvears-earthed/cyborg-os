@@ -1,0 +1,15 @@
+[
+  { "date": "2026-09-21", "time": "09:00", "title": "Week plan · Arc briefing", "meta": "Cyborg" },
+  { "date": "2026-09-22", "time": "10:00", "title": "Woods · site measure", "meta": "Earthed Energy" },
+  { "date": "2026-09-22", "time": "15:00", "title": "Clenergy racking order", "meta": "Procurement" },
+  { "date": "2026-09-23", "time": "08:00", "title": "HV crew · Tailem Bend joint", "meta": "Earthed High Voltage" },
+  { "date": "2026-09-24", "time": "13:00", "title": "Graham proposal call", "meta": "Earthed Energy" },
+  { "date": "2026-09-25", "time": "08:30", "title": "Site walk · Strathalbyn BESS pad", "meta": "Earthed High Voltage" },
+  { "date": "2026-09-25", "time": "11:00", "title": "ASIC restructure block", "meta": "Deep work · no calls" },
+  { "date": "2026-09-25", "time": "14:30", "title": "Troy Hooker · design review", "meta": "Malieke 10.45 kW" },
+  { "date": "2026-09-25", "time": "16:00", "title": "Xero reconcile", "meta": "Arc pre-filled 12 lines" },
+  { "date": "2026-09-28", "time": "09:00", "title": "SAPN embedded gen lodgement", "meta": "Compliance" },
+  { "date": "2026-09-30", "time": "", "title": "NETCC pack due", "meta": "Compliance" },
+  { "date": "2026-10-02", "time": "07:00", "title": "Woods install · day 1", "meta": "Earthed Energy" },
+  { "date": "2026-10-14", "time": "", "title": "Nexans recert", "meta": "Earthed High Voltage" }
+]

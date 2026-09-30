@@ -1,0 +1,19 @@
+{
+  "_schema": {
+    "id": "string · unique",
+    "stage": "New | Contacted | Quoted | Booked | Won | Referral",
+    "channel": "SMS | Email",
+    "title": "string · short label shown in the library",
+    "body": "string · [name] [suburb] [date] [address] are replaced at send time"
+  },
+  "templates": [
+    { "id": "sms-new", "stage": "New", "channel": "SMS", "title": "First contact", "body": "Hi [name], Caleb from Earthed Energy. Got your enquiry re solar for [suburb]. Free consult, I come to you. Best time to call?" },
+    { "id": "sms-quote", "stage": "Quoted", "channel": "SMS", "title": "Quote nudge", "body": "[name], following up on the quote sent Monday. Any questions?" },
+    { "id": "sms-visit", "stage": "Booked", "channel": "SMS", "title": "Site visit booking", "body": "Just booking in the site visit for [date] at [address]. Anything you'd like me to bring for a first look?" },
+    { "id": "email-consult", "stage": "Booked", "channel": "Email", "title": "Consult confirmation", "body": "Hi [name],\n\nConfirming your free consult on [date] at [address]. I will bring a shade tool, a meter reader and a couple of recent quotes for similar homes so you can see real numbers.\n\nIf you have a recent power bill handy, that is the one thing that speeds everything up.\n\nCaleb\nEarthed Energy · 3 Rankine St, Strathalbyn" },
+    { "id": "email-q3", "stage": "Quoted", "channel": "Email", "title": "Quote follow-up · day 3", "body": "Hi [name],\n\nQuick check-in on the quote from earlier this week. Two things people usually ask at this point: how the battery behaves in a blackout, and what the payback looks like on your actual bill. Happy to walk through either on a 10-minute call.\n\nCaleb" },
+    { "id": "email-q10", "stage": "Quoted", "channel": "Email", "title": "Quote follow-up · day 10", "body": "Hi [name],\n\nNo pressure at all. The quote is valid for 30 days and pricing on the panels is holding. If timing has changed on your end, let me know and I will park it until you are ready.\n\nCaleb" },
+    { "id": "email-thanks", "stage": "Won", "channel": "Email", "title": "Post-install thanks + review", "body": "Hi [name],\n\nThanks for having us on the roof this week. The system is live and monitoring is on your phone. Check the app in a few days and you will see the first full-sun day.\n\nIf you have two minutes, a Google review helps the next family in [suburb] find us: https://g.page/earthedenergy/review\n\nCaleb" },
+    { "id": "email-referral", "stage": "Referral", "channel": "Email", "title": "Referral request · 60 days", "body": "Hi [name],\n\nTwo months in. How is the system tracking against the old bill?\n\nIf a neighbour or mate is thinking about solar or a battery, send them my number. Anyone you refer gets the same install crew and the same price you paid, and I will send you $200 once their system is switched on.\n\nCaleb" }
+  ]
+}

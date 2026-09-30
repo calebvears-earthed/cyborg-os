@@ -1,0 +1,26 @@
+{
+  "_schema": "Caleb's training and nutrition. weight in kg. today drives the dashboard Health card. split is the 6-day Cyborg1 programme (4 gym, 2 runs). macros are the daily targets that sum to calories.",
+  "weight": { "kg": 88.8, "date": "2026-09-25", "prev": 89.4, "target": 95, "targetLabel": "95 kg by Christmas", "targetDate": "2026-12-25" },
+  "today": { "wake": "3 AM WAKE UP · GYM", "session": "Cyborg1", "sub": "6-day split · 4 gym sessions · 2 runs", "lifts": ["Add today's lifts here"] },
+  "split": {
+    "MON": "Cyborg1 · gym", "TUE": "Run", "WED": "Cyborg2 · gym", "THU": "Cyborg3 · gym", "FRI": "Cyborg1 · gym", "SAT": "Run", "SUN": "Rest"
+  },
+  "calories": 3500,
+  "macros": [
+    { "id": "protein", "label": "PROTEIN", "grams": 230, "kcalPerGram": 4, "note": "2.6 g/kg · heavy" },
+    { "id": "carbs", "label": "CARBS", "grams": 400, "kcalPerGram": 4, "note": "Around training" },
+    { "id": "fats", "label": "FATS", "grams": 109, "kcalPerGram": 9, "note": "Fill to 3,500" }
+  ],
+  "kobe": [
+    "Everything negative, pressure, challenges, is all an opportunity for me to rise.",
+    "The most important thing is to try and inspire people so that they can be great in whatever they want to do.",
+    "I have nothing in common with lazy people who blame others for their lack of success.",
+    "Great things come from hard work and perseverance. No excuses.",
+    "If you're afraid to fail, then you're probably going to fail.",
+    "The moment you give up is the moment you let someone else win.",
+    "Once you know what failure feels like, determination chases success.",
+    "I can't relate to lazy people. We don't speak the same language.",
+    "Rest at the end, not in the middle.",
+    "Job's not finished."
+  ]
+}

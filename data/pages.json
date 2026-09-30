@@ -1,0 +1,156 @@
+{
+  "ee": {
+    "group": "COMPANIES", "title": "Earthed Energy", "intro": "Solar, batteries, EV and heat pumps for homes and business. PGE 336477.",
+    "stats": [ { "label": "ACTIVE JOBS", "value": "7", "sub": "4 installs this month" }, { "label": "PIPELINE", "value": "$412,300", "sub": "5 quotes out" }, { "label": "NEXT INSTALL", "value": "2 Oct", "sub": "Woods · day 1" } ],
+    "panel": "JOBS", "columns": ["Client", "Suburb", "System", "Stage", "Value"], "grid": "1.2fr 1fr 1.4fr 1fr .8fr",
+    "rows": [
+      ["Malieke", "Strathalbyn", "10.45 kW + Lynx 16.6 kWh", { "t": "Design review", "s": "info" }, { "t": "$36,900", "mono": true }],
+      ["Woods", "Mount Barker", "8.55 kW + Lynx 8.3 kWh", { "t": "Install 2 Oct", "s": "ok" }, { "t": "$28,400", "mono": true }],
+      ["Graham", "Goolwa", "13.3 kW three-phase", { "t": "Proposal", "s": "warn" }, { "t": "$31,200", "mono": true }],
+      ["Bonce", "Hahndorf", "6.6 kW", { "t": "DNSP approval", "s": "warn" }, { "t": "$14,800", "mono": true }],
+      ["Vincent", "Victor Harbor", "Battery retrofit 16.6 kWh", { "t": "Complete", "s": "ok" }, { "t": "$19,600", "mono": true }]
+    ]
+  },
+  "ehv": {
+    "group": "COMPANIES", "title": "Earthed High Voltage", "intro": "HV cable jointing to 33 kV, BESS installation and commissioning. SAPN accredited.",
+    "stats": [ { "label": "ACTIVE SITES", "value": "2", "sub": "Tailem Bend · Strathalbyn" }, { "label": "CREW ON SITE", "value": "5", "sub": "Wed to Fri" }, { "label": "NEXT JOINT", "value": "23 Sep", "sub": "33 kV · Tailem Bend" } ],
+    "panel": "SITES", "columns": ["Site", "Client", "Scope", "Status", "Date"], "grid": "1fr 1fr 1.6fr 1fr .8fr",
+    "rows": [
+      ["Tailem Bend BESS", "5George", "33 kV terminations · 6 joints", { "t": "In progress", "s": "ok" }, { "t": "23 Sep", "mono": true }],
+      ["Strathalbyn pad", "Fowlers", "BESS pad · cable route", { "t": "Site walk", "s": "info" }, { "t": "25 Sep", "mono": true }],
+      ["Shivelec switchroom", "Shivelec", "11 kV cable relocation", { "t": "Quoting", "s": "warn" }, { "t": "Oct", "mono": true }]
+    ]
+  },
+  "pe": {
+    "group": "COMPANIES", "title": "Purple Earth", "intro": "Pre-launch. Workstreams and next steps.",
+    "stats": [ { "label": "STATUS", "value": "Pre-launch", "sub": "Entity not yet registered" }, { "label": "WORKSTREAMS", "value": "4", "sub": "2 blocked on ASIC" }, { "label": "TARGET", "value": "Nov", "sub": "Soft launch" } ],
+    "panel": "WORKSTREAMS", "columns": ["Workstream", "Owner", "Next step", "Due", "Status"], "grid": "1.4fr .8fr 1.6fr .8fr 1fr",
+    "rows": [
+      ["Entity + ABN", "Caleb", "Register after ASIC restructure", { "t": "Oct", "mono": true }, { "t": "Blocked", "s": "warn" }],
+      ["Brand", "Caleb", "Wordmark + palette lock", { "t": "10 Oct", "mono": true }, { "t": "In progress", "s": "info" }],
+      ["Domain + site", "Arc", "Hold purpleearth.au", { "t": "3 Oct", "mono": true }, { "t": "Ready", "s": "ok" }],
+      ["Bank account", "Caleb", "ANZ · after entity", { "t": "Oct", "mono": true }, { "t": "Blocked", "s": "warn" }]
+    ]
+  },
+  "crm": {
+    "group": "OPERATIONS", "title": "CRM & Leads", "intro": "Every lead from Meta, GBP and referrals. Arc appends new leads automatically.",
+    "stats": [ { "label": "NEW LEADS", "value": "9", "sub": "Last 7 days" }, { "label": "QUOTES OUT", "value": "5", "sub": "$142,300 total" }, { "label": "WON THIS MONTH", "value": "3", "sub": "$79,700" } ],
+    "panel": "LEADS", "columns": ["Lead", "Suburb", "Interest", "Source", "Stage", "Value"], "grid": "1fr 1fr 1.4fr .9fr 1fr .8fr",
+    "rows": [
+      ["S. Patel", "Aldinga", "Solar + battery", "Meta", { "t": "New", "s": "info" }, { "t": "$28,000", "mono": true }],
+      ["R. Nguyen", "Stirling", "Battery retrofit", "GBP", { "t": "Contacted", "s": "info" }, { "t": "$17,500", "mono": true }],
+      ["Graham", "Goolwa", "13.3 kW three-phase", "Referral", { "t": "Quoted", "s": "warn" }, { "t": "$31,200", "mono": true }],
+      ["J. Marsh", "Meadows", "EV charger", "Meta", { "t": "New", "s": "info" }, { "t": "$3,400", "mono": true }],
+      ["Bonce", "Hahndorf", "6.6 kW", "Referral", { "t": "Won", "s": "ok" }, { "t": "$14,800", "mono": true }]
+    ]
+  },
+  "marketing": {
+    "group": "OPERATIONS", "title": "Marketing & Brand", "intro": "Meta, Google Business Profile and the two websites. Real install photos only.",
+    "stats": [ { "label": "META SPEND · SEP", "value": "$1,240", "sub": "6 leads · $207 per lead" }, { "label": "GBP RATING", "value": "4.9", "sub": "31 reviews" }, { "label": "SITE VISITS", "value": "1,860", "sub": "earthedenergy.au · 30 days" } ],
+    "panel": "CAMPAIGNS", "columns": ["Campaign", "Channel", "Status", "Spend", "Leads"], "grid": "1.6fr .9fr 1fr .8fr .6fr",
+    "rows": [
+      ["Battery rebate · Hills", "Meta", { "t": "Live", "s": "ok" }, { "t": "$740", "mono": true }, { "t": "4", "mono": true }],
+      ["Three-phase business solar", "Meta", { "t": "Live", "s": "ok" }, { "t": "$500", "mono": true }, { "t": "2", "mono": true }],
+      ["Vincent install case study", "GBP post", { "t": "Draft", "s": "warn" }, { "t": "$0", "mono": true }, { "t": "0", "mono": true }],
+      ["Fleet signage · Cruiser", "Signage", { "t": "Ordered", "s": "info" }, { "t": "$620", "mono": true }, { "t": "·", "mono": true }]
+    ]
+  },
+  "finance": {
+    "group": "OPERATIONS", "title": "Finance", "intro": "Xero feed. Arc reconciles daily and flags anything over 14 days.",
+    "stats": [ { "label": "BANK · ANZ", "value": "$86,420", "sub": "As of this morning" }, { "label": "RECEIVABLE", "value": "$54,900", "sub": "3 invoices" }, { "label": "PAYABLE", "value": "$21,300", "sub": "Due within 14 days" } ],
+    "panel": "INVOICES", "columns": ["Invoice", "Client", "Amount", "Due", "Status"], "grid": ".9fr 1.2fr .9fr .8fr 1fr",
+    "rows": [
+      [{ "t": "INV-0231", "mono": true }, "Vincent", { "t": "$19,600", "mono": true }, { "t": "28 Sep", "mono": true }, { "t": "Sent", "s": "info" }],
+      [{ "t": "INV-0229", "mono": true }, "5George", { "t": "$27,500", "mono": true }, { "t": "20 Sep", "mono": true }, { "t": "Overdue 5 d", "s": "warn" }],
+      [{ "t": "INV-0228", "mono": true }, "Bonce deposit", { "t": "$7,800", "mono": true }, { "t": "30 Sep", "mono": true }, { "t": "Sent", "s": "info" }],
+      [{ "t": "INV-0225", "mono": true }, "Fowlers", { "t": "$12,400", "mono": true }, { "t": "15 Sep", "mono": true }, { "t": "Paid", "s": "ok" }]
+    ]
+  },
+  "compliance": {
+    "group": "OPERATIONS", "title": "Compliance", "intro": "Licences, accreditations and lodgements across both entities.",
+    "stats": [ { "label": "CURRENT", "value": "6", "sub": "Licences and accreditations" }, { "label": "EXPIRING · 90 DAYS", "value": "1", "sub": "Nexans certification" }, { "label": "NETCC", "value": "In progress", "sub": "Target end October" } ],
+    "panel": "REGISTER", "columns": ["Item", "Reference", "Holder", "Expiry", "Status"], "grid": "1.5fr 1fr .9fr .8fr 1fr",
+    "rows": [
+      ["SA Electrical Contractor Licence", { "t": "PGE 336477", "mono": true }, "EHV Pty Ltd", { "t": "Jun 2027", "mono": true }, { "t": "Current", "s": "ok" }],
+      ["SAPN accreditation", { "t": "SAPN", "mono": true }, "EHV Pty Ltd", { "t": "Mar 2027", "mono": true }, { "t": "Current", "s": "ok" }],
+      ["Nexans certification", { "t": "NEX-J", "mono": true }, "Caleb", { "t": "14 Oct 2026", "mono": true }, { "t": "Expiring", "s": "warn" }],
+      ["Prysmian certification", { "t": "PRY-J", "mono": true }, "Caleb", { "t": "Feb 2028", "mono": true }, { "t": "Current", "s": "ok" }],
+      ["NETCC", { "t": "Application", "mono": true }, "EHV t/a EE", { "t": "·", "mono": true }, { "t": "In progress", "s": "info" }],
+      ["ASIC address change", { "t": "Form 484", "mono": true }, "EHV Pty Ltd", { "t": "Today", "mono": true }, { "t": "Due", "s": "warn" }]
+    ]
+  },
+  "safety": {
+    "group": "OPERATIONS", "title": "Safety", "intro": "SWMS, toolbox talks, incidents. Orange hi-vis, always.",
+    "stats": [ { "label": "DAYS SINCE INCIDENT", "value": "212", "sub": "Last: minor, Feb 2026" }, { "label": "SWMS CURRENT", "value": "14", "sub": "2 reviews due Oct" }, { "label": "TOOLBOX · SEP", "value": "3", "sub": "Next: 29 Sep" } ],
+    "panel": "OPEN ITEMS", "columns": ["Item", "Site", "Owner", "Date", "Status"], "grid": "1.6fr 1fr .8fr .8fr 1fr",
+    "rows": [
+      ["SWMS · 33 kV termination", "Tailem Bend", "Caleb", { "t": "22 Sep", "mono": true }, { "t": "Signed", "s": "ok" }],
+      ["Toolbox · BESS pad access", "Strathalbyn", "Crew lead", { "t": "29 Sep", "mono": true }, { "t": "Scheduled", "s": "info" }],
+      ["SWMS review · roof work", "All EE sites", "Troy", { "t": "10 Oct", "mono": true }, { "t": "Review due", "s": "warn" }],
+      ["First aid kit audit", "Cruiser E7RTH", "Caleb", { "t": "30 Sep", "mono": true }, { "t": "Open", "s": "warn" }]
+    ]
+  },
+  "legal": {
+    "group": "OPERATIONS", "title": "Legal", "intro": "Contracts, signature packs and anything with a counterparty.",
+    "stats": [ { "label": "OPEN CONTRACTS", "value": "4", "sub": "2 awaiting signature" }, { "label": "REVIEW DUE", "value": "1", "sub": "Subcontract · 5George" }, { "label": "RESTRUCTURE", "value": "ASIC", "sub": "Lodge today" } ],
+    "panel": "MATTERS", "columns": ["Matter", "Counterparty", "Type", "Status", "Next date"], "grid": "1.5fr 1fr 1fr 1fr .8fr",
+    "rows": [
+      ["Install agreement", "Woods", "Residential contract", { "t": "Awaiting signature", "s": "warn" }, { "t": "29 Sep", "mono": true }],
+      ["Install agreement", "Malieke", "Residential contract", { "t": "Awaiting signature", "s": "warn" }, { "t": "2 Oct", "mono": true }],
+      ["HV subcontract", "5George", "Subcontract", { "t": "Review", "s": "info" }, { "t": "1 Oct", "mono": true }],
+      ["Company restructure", "ASIC", "Form 484", { "t": "Lodging", "s": "info" }, { "t": "Today", "mono": true }]
+    ]
+  },
+  "docs": {
+    "group": "OPERATIONS", "title": "eDocuments", "intro": "Proposals, brochures, contracts and certificates. One source of truth on OneDrive.",
+    "stats": [ { "label": "DOCUMENTS", "value": "312", "sub": "Across both entities" }, { "label": "UPDATED THIS WEEK", "value": "9", "sub": "Mostly proposals" }, { "label": "AWAITING SIGNATURE", "value": "2", "sub": "Woods · Malieke" } ],
+    "panel": "RECENT", "columns": ["Document", "Entity", "Type", "Updated", "Owner"], "grid": "1.8fr .9fr 1fr .8fr .7fr",
+    "rows": [
+      ["Malieke · 10.45 kW proposal v3", "EE", "Proposal", { "t": "Today", "mono": true }, "Caleb"],
+      ["Capability statement · 2026", "EHV", "Brochure", { "t": "24 Sep", "mono": true }, "Caleb"],
+      ["Woods · install agreement", "EE", "Contract", { "t": "23 Sep", "mono": true }, "Arc"],
+      ["Tailem Bend · SWMS 33 kV", "EHV", "Safety", { "t": "22 Sep", "mono": true }, "Caleb"],
+      ["Design system v1", "Shared", "Guideline", { "t": "24 Sep", "mono": true }, "Caleb"]
+    ]
+  },
+  "urgent": {
+    "group": "YOU", "title": "Urgent", "intro": "Deep-work blocks Arc has queued for today. Reads from urgent-actions.json.",
+    "stats": [ { "label": "TOTAL TIME", "value": "5 h 45 min", "sub": "3 blocks" }, { "label": "DUE TODAY", "value": "2", "sub": "ASIC · Malieke" }, { "label": "BLOCKED", "value": "0", "sub": "Nothing waiting on others" } ],
+    "panel": "WORKBLOCKS", "columns": ["Action", "Detail", "Time", "Due", "Priority"], "grid": "1.2fr 2fr .6fr .8fr .8fr", "rows": []
+  },
+  "health": {
+    "group": "YOU", "title": "Health & Fitness", "intro": "The body runs the business. Keep the streak.",
+    "stats": [ { "label": "SLEEP", "value": "7 h 10", "sub": "Last night" }, { "label": "STEPS", "value": "8,420", "sub": "Today so far" }, { "label": "TRAINING", "value": "3 of 4", "sub": "This week" } ],
+    "panel": "THIS WEEK", "columns": ["Day", "Session", "Duration", "Notes"], "grid": ".6fr 1.4fr .7fr 2fr",
+    "rows": [
+      [{ "t": "MON", "mono": true }, "Strength · upper", { "t": "45 min", "mono": true }, "Bench 80 kg × 5"],
+      [{ "t": "TUE", "mono": true }, "Run · Strathalbyn loop", { "t": "32 min", "mono": true }, "6.1 km, easy"],
+      [{ "t": "THU", "mono": true }, "Strength · lower", { "t": "50 min", "mono": true }, "Squat 100 kg × 5"],
+      [{ "t": "SAT", "mono": true }, "Hills walk", { "t": "·", "mono": true }, { "t": "Planned", "s": "info" }]
+    ]
+  },
+  "brain": {
+    "group": "YOU", "title": "Caleb's Brain", "intro": "Everything captured from Slack, voice notes and Arc. Searchable later.",
+    "stats": [ { "label": "NOTES", "value": "48", "sub": "Since 1 Aug" }, { "label": "THIS WEEK", "value": "6", "sub": "4 from voice" }, { "label": "OPEN LOOPS", "value": "4", "sub": "Need a decision" } ],
+    "panel": "RECENT", "columns": ["Note", "Tag", "Captured", "Source"], "grid": "2.2fr .8fr .8fr .8fr",
+    "rows": [
+      ["Ask Troy about Tigo optimiser stock before Woods install", "Jobs", { "t": "Today", "mono": true }, "Voice"],
+      ["Purple Earth: hold domain, register after ASIC", "Purple Earth", { "t": "Yesterday", "mono": true }, "Slack"],
+      ["Substation word is off-limits in marketing as of 14 Sep", "Brand", { "t": "14 Sep", "mono": true }, "Arc"],
+      ["Cool-store operators: winter load profile pitch", "Sales", { "t": "12 Sep", "mono": true }, "Voice"]
+    ]
+  },
+  "settings": {
+    "group": "YOU", "title": "Settings", "intro": "Go-live checklist, connectors and device settings. Paste API keys into Vercel → Settings → Environment Variables; each card lists the exact names.",
+    "stats": [ { "label": "CONNECTED", "value": "2", "sub": "Outlook · GitHub" }, { "label": "PENDING", "value": "2", "sub": "Xero · Slack" }, { "label": "ARC ENDPOINT", "value": "Mock", "sub": "CYBORG_ARC_ENDPOINT unset" } ],
+    "panel": "INTEGRATIONS", "columns": ["Integration", "Purpose", "Status", "Last sync"], "grid": "1fr 2fr 1fr .8fr",
+    "rows": [
+      ["Outlook", "Calendar and mail into Arc", { "t": "Connected", "s": "ok" }, { "t": "08:02", "mono": true }],
+      ["GitHub", "Cyborg and Arc repos", { "t": "Connected", "s": "ok" }, { "t": "07:40", "mono": true }],
+      ["Xero", "Invoices, bank feed, reconcile", { "t": "Not connected", "s": "warn" }, { "t": "·", "mono": true }],
+      ["Slack", "#ops posts and capture to Brain", { "t": "Not connected", "s": "warn" }, { "t": "·", "mono": true }],
+      ["Claude", "Reasoning and documents", { "t": "Via Arc", "s": "info" }, { "t": "·", "mono": true }],
+      ["Grok", "Fast lookups", { "t": "Via Arc", "s": "info" }, { "t": "·", "mono": true }]
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "_schema": {
+    "quarter": "string",
+    "months": "array of 3 month labels · column headers",
+    "rows": "array of { id, label, cells: [string, string, string] } · cells align to months, edited inline and cached in localStorage under cyborg.mcal"
+  },
+  "quarter": "Q4 2026",
+  "months": ["October", "November", "December"],
+  "rows": [
+    { "id": "blog", "label": "Blog articles", "cells": ["How to read your SA power bill · 7 Oct\nGoodWe vs Sigenergy backup · 21 Oct", "Cheaper Home Batteries deeming explained · 4 Nov\nThree-phase solar for small business · 18 Nov", "Summer export limits in SA · 2 Dec"] },
+    { "id": "video", "label": "Video releases", "cells": ["V1 Power bill · 14 Oct\nV2 GoodWe vs Sigenergy · 28 Oct", "V3 Goyder South · 11 Nov\nV4 Nyrstar fire response · 25 Nov", "V5 One day on the tools · 9 Dec"] },
+    { "id": "paid", "label": "Paid campaigns", "cells": ["Meta 3-tier funnel live · 1 Oct\nGoogle Search x3 live · 6 Oct", "Performance Max remarketing live · 3 Nov\nBudget review · 17 Nov", "Holiday pause 22 Dec to 5 Jan"] },
+    { "id": "events", "label": "Trade events", "cells": ["Strathalbyn Show · 10 to 11 Oct", "All-Energy Australia · Melbourne · dates to confirm", "Nil"] },
+    { "id": "seasonal", "label": "Seasonal moments", "cells": ["Daylight saving starts 4 Oct · export peak messaging", "Summer install push · book before Christmas", "CHB deeming step-down reminder · 31 Dec\nEOFY planning content for commercial · draft"] }
+  ]
+}

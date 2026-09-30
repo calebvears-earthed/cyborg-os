@@ -1,0 +1,25 @@
+{
+  "_schema": {
+    "id": "string · rowId + fireOn",
+    "rowId": "finance-grid row id",
+    "kind": "due | defaulted | resumption",
+    "fireOn": "YYYY-MM-DD · due: 3 days before nextDue · defaulted: daily · resumption: 14 days before resumes",
+    "channels": "array · calendar | sms | push",
+    "message": "string · SMS body",
+    "state": "pending | snoozed | dismissed | sent",
+    "snoozedUntil": "YYYY-MM-DD or null",
+    "note": "api/finance-reminders.js regenerates pending entries from finance-grid.json on every GET. Snoozes and dismissals are stored here and survive regeneration."
+  },
+  "generatedAt": "2026-09-25T08:00:00+09:30",
+  "reminders": [
+    { "id": "ato-plan:2026-09-25", "rowId": "ato-plan", "kind": "defaulted", "fireOn": "2026-09-25", "channels": ["sms", "push"], "message": "Reminder: ATO payment plan · $2,100 due Monthly · ATO · DEFAULTED, ring 13 28 66", "state": "pending", "snoozedUntil": null },
+    { "id": "ustore:2026-10-03", "rowId": "ustore", "kind": "due", "fireOn": "2026-10-03", "channels": ["calendar", "sms", "push"], "message": "Reminder: U-Store Norwood workshop · $225 due 6 Oct 2026 · Earthed HV", "state": "pending", "snoozedUntil": null },
+    { "id": "morris-half:2026-10-18", "rowId": "morris-half", "kind": "due", "fireOn": "2026-10-18", "channels": ["calendar", "sms", "push"], "message": "Reminder: Morris Finance Cruiser (half) · $1,013.50 due 21 Oct 2026 · Earthed HV", "state": "pending", "snoozedUntil": null },
+    { "id": "cruiser-rego:2026-11-13", "rowId": "cruiser-rego", "kind": "due", "fireOn": "2026-11-13", "channels": ["calendar", "sms", "push"], "message": "Reminder: Land Cruiser rego · $97 due 16 Nov 2026 · Earthed HV", "state": "pending", "snoozedUntil": null },
+    { "id": "angle-hilux:2026-11-17", "rowId": "angle-hilux", "kind": "resumption", "fireOn": "2026-11-17", "channels": ["calendar", "sms", "push"], "message": "Reminder: Angle Finance Hilux P20645 resumes 1 Dec 2026 · $377.67/mo · Earthed HV", "state": "pending", "snoozedUntil": null },
+    { "id": "angle-trailer:2026-11-17", "rowId": "angle-trailer", "kind": "resumption", "fireOn": "2026-11-17", "channels": ["calendar", "sms", "push"], "message": "Reminder: Angle Finance Trailer J64139 resumes 1 Dec 2026 · $337.44/mo · Earthed HV", "state": "pending", "snoozedUntil": null },
+    { "id": "shegog-super:2026-11-27", "rowId": "shegog-super", "kind": "due", "fireOn": "2026-11-27", "channels": ["calendar", "sms", "push"], "message": "Reminder: Alastair Shegog unpaid super · ~$5,000 due 30 Nov 2026 · Earthed HV", "state": "pending", "snoozedUntil": null },
+    { "id": "morris-full:2026-12-07", "rowId": "morris-full", "kind": "resumption", "fireOn": "2026-12-07", "channels": ["calendar", "sms", "push"], "message": "Reminder: Morris Finance Cruiser (full) resumes 21 Dec 2026 · $2,027/mo · Earthed HV", "state": "pending", "snoozedUntil": null },
+    { "id": "rent:2026-12-21", "rowId": "rent", "kind": "resumption", "fireOn": "2026-12-21", "channels": ["calendar", "sms", "push"], "message": "Reminder: Rent resumes 4 Jan 2027 · 3 Rankine St · Caleb Personal", "state": "pending", "snoozedUntil": null }
+  ]
+}

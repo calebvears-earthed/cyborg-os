@@ -1,0 +1,39 @@
+{
+  "_schema": {
+    "id": "string · unique",
+    "name": "string",
+    "phone": "string",
+    "email": "string",
+    "source": "Meta | Google | Website | Referral | Walk-in | Direct",
+    "referredBy": "string · Referral source only",
+    "company": "string · optional",
+    "suburb": "string",
+    "interest": "Solar | Battery | EV | Commercial | HV | Multiple",
+    "value": "number · AUD estimate",
+    "createdAt": "ISO datetime · when the lead arrived",
+    "contactedAt": "ISO datetime or null · first outbound contact",
+    "responded": "boolean",
+    "consultBooked": "boolean",
+    "followUps": "number · outbound attempts after first contact",
+    "lastContact": { "date": "YYYY-MM-DD", "method": "Call | SMS | Email | Site visit | Walk-in" },
+    "nextAction": "Call | Site visit | Quote | Follow-up | Won | Lost",
+    "stage": "New | Contacted | Quoted | Booked | Won | Lost",
+    "lostReason": "string · Lost only",
+    "owner": "Caleb | Arc | Troy",
+    "notes": "string",
+    "score": "derived · Hot | Warm | Cold. Never stored, computed from the fields above"
+  },
+  "leads": [
+    { "id": "L-0091", "name": "S. Patel", "phone": "0412 000 091", "email": "spatel@example.com", "source": "Meta", "suburb": "Aldinga", "interest": "Multiple", "value": 28000, "createdAt": "2026-09-24T09:10:00+09:30", "contactedAt": "2026-09-24T11:40:00+09:30", "responded": true, "consultBooked": true, "followUps": 0, "lastContact": { "date": "2026-09-24", "method": "Call" }, "nextAction": "Site visit", "stage": "Booked", "owner": "Caleb", "notes": "Wants 10 kW plus battery. Site visit Tuesday." },
+    { "id": "L-0090", "name": "R. Nguyen", "phone": "0412 000 090", "email": "rnguyen@example.com", "source": "Google", "suburb": "Stirling", "interest": "Battery", "value": 17500, "createdAt": "2026-09-22T14:05:00+09:30", "contactedAt": "2026-09-22T16:00:00+09:30", "responded": true, "consultBooked": false, "followUps": 1, "lastContact": { "date": "2026-09-24", "method": "SMS" }, "nextAction": "Follow-up", "stage": "Contacted", "owner": "Caleb", "notes": "Existing 6.6 kW Fronius. Retrofit 16.6 kWh." },
+    { "id": "L-0089", "name": "Graham", "phone": "0412 000 089", "email": "graham@example.com", "source": "Referral", "referredBy": "Vincent", "suburb": "Goolwa", "interest": "Commercial", "value": 31200, "createdAt": "2026-09-15T08:30:00+09:30", "contactedAt": "2026-09-15T09:15:00+09:30", "responded": true, "consultBooked": true, "followUps": 2, "lastContact": { "date": "2026-09-23", "method": "Email" }, "nextAction": "Follow-up", "stage": "Quoted", "owner": "Caleb", "notes": "13.3 kW three-phase. Quote sent 19 Sep." },
+    { "id": "L-0088", "name": "J. Marsh", "phone": "0412 000 088", "email": "jmarsh@example.com", "source": "Meta", "suburb": "Meadows", "interest": "EV", "value": 3400, "createdAt": "2026-09-25T07:50:00+09:30", "contactedAt": null, "responded": false, "consultBooked": false, "followUps": 0, "lastContact": { "date": "", "method": "" }, "nextAction": "Call", "stage": "New", "owner": "Arc", "notes": "Wallbox, single phase, has 8 kW solar." },
+    { "id": "L-0087", "name": "Bonce", "phone": "0412 000 087", "email": "bonce@example.com", "source": "Referral", "referredBy": "Woods", "suburb": "Hahndorf", "interest": "Solar", "value": 14800, "createdAt": "2026-08-28T10:00:00+09:30", "contactedAt": "2026-08-28T10:30:00+09:30", "responded": true, "consultBooked": true, "followUps": 1, "lastContact": { "date": "2026-09-18", "method": "Site visit" }, "nextAction": "Won", "stage": "Won", "owner": "Caleb", "notes": "6.6 kW. DNSP approval pending." },
+    { "id": "L-0086", "name": "K. Dawson", "phone": "0412 000 086", "email": "kdawson@example.com", "source": "Website", "suburb": "Mount Barker", "interest": "Battery", "value": 16000, "createdAt": "2026-09-10T18:20:00+09:30", "contactedAt": "2026-09-11T08:05:00+09:30", "responded": false, "consultBooked": false, "followUps": 3, "lastContact": { "date": "2026-09-20", "method": "SMS" }, "nextAction": "Follow-up", "stage": "Contacted", "owner": "Caleb", "notes": "No reply to 3 attempts." },
+    { "id": "L-0085", "name": "Strath Bakery", "phone": "08 8536 0000", "email": "orders@example.com", "source": "Walk-in", "company": "Strath Bakery", "suburb": "Strathalbyn", "interest": "Commercial", "value": 42000, "createdAt": "2026-09-19T12:00:00+09:30", "contactedAt": "2026-09-19T12:00:00+09:30", "responded": true, "consultBooked": true, "followUps": 0, "lastContact": { "date": "2026-09-19", "method": "Walk-in" }, "nextAction": "Quote", "stage": "Booked", "owner": "Caleb", "notes": "Walked into 3 Rankine. Three-phase, ovens on from 4 am." },
+    { "id": "L-0084", "name": "M. Ferrari", "phone": "0412 000 084", "email": "mferrari@example.com", "source": "Direct", "suburb": "Victor Harbor", "interest": "Solar", "value": 12500, "createdAt": "2026-09-17T09:45:00+09:30", "contactedAt": "2026-09-17T09:45:00+09:30", "responded": true, "consultBooked": false, "followUps": 1, "lastContact": { "date": "2026-09-22", "method": "Call" }, "nextAction": "Quote", "stage": "Contacted", "owner": "Caleb", "notes": "Phoned in. Wants pricing before visit." },
+    { "id": "L-0083", "name": "A. Okafor", "phone": "0412 000 083", "email": "aokafor@example.com", "source": "Google", "suburb": "Aldgate", "interest": "Multiple", "value": 34000, "createdAt": "2026-09-08T11:00:00+09:30", "contactedAt": "2026-09-08T15:30:00+09:30", "responded": true, "consultBooked": true, "followUps": 2, "lastContact": { "date": "2026-09-21", "method": "Email" }, "nextAction": "Follow-up", "stage": "Quoted", "owner": "Caleb", "notes": "Sigenergy quote v2 sent." },
+    { "id": "L-0082", "name": "P. Lindqvist", "phone": "0412 000 082", "email": "plindqvist@example.com", "source": "Meta", "suburb": "Willunga", "interest": "Battery", "value": 15000, "createdAt": "2026-08-30T16:10:00+09:30", "contactedAt": "2026-08-31T09:00:00+09:30", "responded": false, "consultBooked": false, "followUps": 3, "lastContact": { "date": "2026-09-14", "method": "Email" }, "nextAction": "Lost", "stage": "Lost", "lostReason": "No response", "owner": "Arc", "notes": "" },
+    { "id": "L-0081", "name": "Shivelec", "phone": "Add phone", "email": "Add email", "source": "Direct", "company": "Shivelec", "suburb": "Adelaide", "interest": "HV", "value": 68000, "createdAt": "2026-09-12T10:00:00+09:30", "contactedAt": "2026-09-12T10:00:00+09:30", "responded": true, "consultBooked": true, "followUps": 1, "lastContact": { "date": "2026-09-24", "method": "Call" }, "nextAction": "Quote", "stage": "Quoted", "owner": "Caleb", "notes": "11 kV cable relocation. Quoting October." }
+  ]
+}

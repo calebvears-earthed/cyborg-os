@@ -1,0 +1,11 @@
+{
+  "name": "cyborg-os",
+  "private": true,
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "web-push": "^3.6.7"
+  }
+}

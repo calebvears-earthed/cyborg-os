@@ -1,0 +1,17 @@
+{
+  "_schema": "Rolling inputs the six stat cards need that are not derivable from finance-grid.json. Outflows are summed live from the grid. All AUD inc GST unless stated.",
+  "asOf": "2026-09-24",
+  "cashOnHand": 9100,
+  "cashOnHandNote": "ANZ EHV · as of 24 Sep",
+  "incomeTrailingMonthly": 39500,
+  "incomeNote": "12-mo trailing avg · ex GST · Xero not reconnected",
+  "weeksPerMonth": 4.333,
+  "phases": [
+    { "id": "now", "label": "Sep to Nov", "from": "2026-09-01" },
+    { "id": "dec", "label": "Dec+", "from": "2026-12-01" }
+  ],
+  "structuralMoves": [
+    { "id": "bank", "title": "Bank consolidation", "summary": "All business expenses through the single EHV ANZ Earthed Energy account.", "detail": "ANZ 015-627 / 669325122. Move Telstra, Claude, GoDaddy, Vercel, U-Store and both finance direct debits to this account. Removes the EHV/EE Co dual-feed complexity in Xero and gives one bank feed to reconcile." },
+    { "id": "eeco", "title": "EE Co dissolvency", "summary": "Residential arm consumed into EHV.", "detail": "Steps: Simani Dube cession · Final BAS + activity statements · Form 6010 voluntary deregistration · NAB EE Co account closure. Sequence after the ASIC Form 484 restructure lodges." }
+  ]
+}

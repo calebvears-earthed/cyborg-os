@@ -1,0 +1,17 @@
+{
+  "_schema": {
+    "asOf": "ISO datetime or null · null means APIs not yet wired, UI shows a placeholder dot",
+    "window": "rolling window in days",
+    "metrics": "array of { id, label, value, sub, source } · value null until wired"
+  },
+  "asOf": null,
+  "window": 30,
+  "metrics": [
+    { "id": "meta", "label": "META ADS · 30 DAYS", "value": null, "sub": "Spend + leads · Meta Insights API", "source": "meta-insights" },
+    { "id": "google", "label": "GOOGLE ADS · 30 DAYS", "value": null, "sub": "Spend + leads · Google Ads API", "source": "google-ads" },
+    { "id": "sessions", "label": "SITE SESSIONS", "value": null, "sub": "earthedenergy.au · GA4", "source": "ga4" },
+    { "id": "consults", "label": "CONSULT REQUESTS", "value": null, "sub": "Past 30 days · data/leads.json", "source": "leads" },
+    { "id": "cpl", "label": "CPL · ROLLING 30", "value": null, "sub": "Target under $60", "source": "derived" },
+    { "id": "cac", "label": "CAC · ROLLING 30", "value": null, "sub": "Target under $500", "source": "derived" }
+  ]
+}

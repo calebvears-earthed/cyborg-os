@@ -1,0 +1,20 @@
+[
+  { "id": "sapn", "name": "SAPN", "company": "SA Power Networks", "role": "DNSP · embedded generation, connections", "phone": "13 12 61", "email": "Add email", "type": "Network" },
+  { "id": "shiv", "name": "Shiv", "company": "Shivelec", "role": "HV contractor · switchroom works", "phone": "Add phone", "email": "Add email", "type": "Client" },
+  { "id": "enerven", "name": "Enerven", "company": "Enerven", "role": "Principal contractor · BESS and network", "phone": "Add phone", "email": "Add email", "type": "Principal" },
+  { "id": "osw", "name": "OSW", "company": "One Stop Warehouse", "role": "Wholesaler · panels, inverters, batteries", "phone": "Add phone", "email": "Add email", "type": "Supplier" },
+  { "id": "greendeal", "name": "GreenDeal", "company": "GreenDeal", "role": "STC and rebate trading", "phone": "Add phone", "email": "Add email", "type": "Rebates" },
+  { "id": "troy", "name": "Troy Hooker", "company": "CEC Accredited Designer", "role": "Design partner · SAA A3996068", "phone": "Add phone", "email": "Add email", "type": "Partner" },
+  { "id": "5george", "name": "5George", "company": "5George", "role": "Client · Tailem Bend BESS", "phone": "Add phone", "email": "Add email", "type": "Client" },
+  { "id": "fowlers", "name": "Fowlers", "company": "Fowlers", "role": "Client · Strathalbyn BESS pad", "phone": "Add phone", "email": "Add email", "type": "Client" },
+  { "id": "nexans", "name": "Nexans", "company": "Nexans Australia", "role": "Cable accessories · jointer certification", "phone": "Add phone", "email": "Add email", "type": "Supplier" },
+  { "id": "prysmian", "name": "Prysmian", "company": "Prysmian Group", "role": "Cable accessories · jointer certification", "phone": "Add phone", "email": "Add email", "type": "Supplier" },
+  { "id": "goodwe", "name": "GoodWe", "company": "GoodWe Australia", "role": "Inverters and Lynx batteries · warranty", "phone": "Add phone", "email": "Add email", "type": "Supplier" },
+  { "id": "clenergy", "name": "Clenergy", "company": "Clenergy", "role": "PV-ezRack racking", "phone": "Add phone", "email": "Add email", "type": "Supplier" },
+  { "id": "tigo", "name": "Tigo", "company": "Tigo Energy", "role": "TS4-A-O optimisers", "phone": "Add phone", "email": "Add email", "type": "Supplier" },
+  { "id": "elesha", "name": "Elesha Loncar", "company": "Clothing Direct", "role": "Uniforms · orange hi-vis, chest patches", "phone": "Add phone", "email": "Add email", "type": "Supplier" },
+  { "id": "anz", "name": "ANZ", "company": "ANZ Business", "role": "Bank · BSB 015-627", "phone": "13 13 14", "email": "Add email", "type": "Finance" },
+  { "id": "asic", "name": "ASIC", "company": "ASIC", "role": "Company register · Form 484", "phone": "1300 300 630", "email": "Add email", "type": "Regulator" },
+  { "id": "cec", "name": "Clean Energy Council", "company": "CEC", "role": "Accreditation · NETCC", "phone": "Add phone", "email": "Add email", "type": "Regulator" },
+  { "id": "malieke", "name": "Malieke", "company": "Residential", "role": "Client · Strathalbyn 10.45 kW", "phone": "Add phone", "email": "Add email", "type": "Client" }
+]

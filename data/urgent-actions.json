@@ -1,0 +1,8 @@
+[
+  { "id": "asic", "title": "ASIC restructure", "meta": "Address change to 3 Rankine St · lodge before 5 pm", "time": "3 h", "due": "Today 17:00", "owner": "Caleb", "priority": "urgent",
+    "todos": [ { "t": "Pull Form 484 draft from Arc", "done": true }, { "t": "Confirm registered office · 3 Rankine St Strathalbyn", "done": true }, { "t": "Director sign-off", "done": false }, { "t": "Lodge on ASIC Connect before 5 pm", "done": false }, { "t": "Save receipt to 777 legal + finance", "done": false } ] },
+  { "id": "netcc", "title": "NETCC accreditation pack", "meta": "Evidence folder review", "time": "2 h", "due": "30 Sep", "owner": "Caleb", "priority": "semi",
+    "todos": [ { "t": "Consumer complaints procedure · final", "done": true }, { "t": "3 install photo sets with sign-offs", "done": false }, { "t": "Warranty and service policy PDF", "done": false }, { "t": "Upload to NETCC portal", "done": false } ] },
+  { "id": "malieke", "title": "Malieke proposal sign-off", "meta": "Pricing waterfall check · send to client", "time": "45 min", "due": "Today", "owner": "Caleb", "priority": "semi",
+    "todos": [ { "t": "Check Lynx 16.6 kWh line item against OSW price", "done": false }, { "t": "STC and CHB rebate lines", "done": false }, { "t": "Export v3 PDF", "done": false }, { "t": "Send to client with cover note", "done": false } ] }
+]

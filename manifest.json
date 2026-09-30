@@ -1,0 +1,16 @@
+{
+  "name": "cyborg. · Earthed",
+  "short_name": "cyborg.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0612",
+  "theme_color": "#0B0612",
+  "icons": [
+    {
+      "src": "assets/icon-plum.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

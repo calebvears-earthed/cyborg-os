@@ -1,0 +1,54 @@
+{
+  "_schema": "Static Q4 2026 marketing plan. brandBase is the OneDrive root for file:// tiles. meta.source is the markdown the summary was pulled from.",
+  "brandBase": "file:///Users/caleb/Library/CloudStorage/OneDrive-Personal/444%20brand%20centre/",
+  "brand": [
+    { "label": "MASTER", "title": "Master brand identity", "path": "_Brand-Master/" },
+    { "label": "EHV", "title": "Earthed HV assets", "path": "earthed-hv/" },
+    { "label": "EE", "title": "Earthed Energy assets", "path": "earthed-energy/" },
+    { "label": "PE", "title": "Purple Earth assets", "path": "purple-earth/" },
+    { "label": "SHARED", "title": "Shared raw ingredients", "path": "_shared/" },
+    { "label": "REFERENCE", "title": "Reference designs", "path": "reference-designs/" }
+  ],
+  "meta": {
+    "source": "file:///Users/caleb/Library/CloudStorage/OneDrive-Personal/000%20unearthed/website-upgrade/META-AD-STRUCTURE-Q4-2026.md",
+    "budget": "$70/day · $2,100/mo",
+    "items": [
+      { "k": "Funnel", "v": "3 tiers · Awareness → Consideration → Conversion · 6 ad sets" },
+      { "k": "Landing", "v": "Each ad set links to a specific /guides page" },
+      { "k": "Audiences", "v": "7 custom audiences to build" },
+      { "k": "Efficiency", "v": "CPL under $60 · CAC under $500" },
+      { "k": "Q4 traffic", "v": "3,000 new visitors · 800 guide reads" },
+      { "k": "Q4 outcomes", "v": "25 to 40 consult requests · 8 to 12 signed deals" }
+    ]
+  },
+  "google": {
+    "total": "$80/day · $2,400/mo",
+    "combined": "Meta + Google · $4,500/mo Q4 paid",
+    "campaigns": [
+      { "n": "01", "name": "Solar Search", "budget": "$30/day", "landing": "/solar-panels", "angle": "Utility-grade solar. Installed by HV engineers. Adelaide + Hills + Fleurieu. Free consult.", "keywords": ["solar panels adelaide", "solar quote adelaide", "10kw solar system adelaide", "solar installer adelaide hills", "cec accredited solar installer adelaide", "residential solar south australia", "solar and battery adelaide"] },
+      { "n": "02", "name": "Battery Search", "budget": "$25/day", "landing": "/battery-storage", "angle": "Whole-home backup that actually works. GoodWe or Sigenergy + Gateway. Free consult.", "keywords": ["home battery adelaide", "sigenergy battery adelaide", "goodwe battery adelaide", "whole home backup adelaide", "cheaper home batteries program south australia", "add battery to existing solar adelaide"] },
+      { "n": "03", "name": "EV Charging Search", "budget": "$10/day", "landing": "/ev-charging", "angle": "Home EV chargers wired properly. Solar-first. Adelaide.", "keywords": ["ev charger installation adelaide", "wallbox installer adelaide", "home ev charging solar integration adelaide", "tesla wall connector adelaide"] },
+      { "n": "04", "name": "Performance Max Remarketing", "budget": "$15/day", "landing": "/contact", "angle": "Audience: everyone who visited earthedenergy.au in the past 30 days.", "keywords": [] }
+    ],
+    "setup": [
+      "Google Ads account linked to caleb@earthedhv.au",
+      "GA4 property for earthedenergy.au",
+      "Google Search Console verified",
+      "Google Business Profile at 3 Rankine St, Strathalbyn",
+      "Meta Pixel + GA4 event schema aligned"
+    ]
+  },
+  "videos": [
+    { "n": "01", "title": "How to read your SA power bill", "hook": "The five numbers on your bill that decide what solar you actually need.", "treatment": "Caleb at a kitchen table, real bill in hand, red pen circling five numbers, plain English under 60 seconds. Cuts to close-ups of the bill.", "location": "Client kitchen post-install. Doubles as social proof.", "length": "60 to 90 sec", "platforms": ["Meta reel", "YouTube short", "TikTok", "LinkedIn"] },
+    { "n": "02", "title": "GoodWe ESA vs Sigenergy + Gateway", "hook": "Both brands say whole-home backup. Only one is telling the whole truth.", "treatment": "Caleb between two installed systems, pointing to each, explaining the motor derate difference. Ends with the $999 Gateway line item on a quote.", "location": "Workshop wall at 3 Rankine with cutaway boards mounted.", "length": "90 sec", "platforms": ["Meta reel", "YouTube short", "TikTok"] },
+    { "n": "03", "title": "78 turbines at Goyder South", "hook": "The job that started Earthed.", "treatment": "Drone footage from wind farm work with Caleb voiceover: twelve years ago I terminated the first joint on this ridge. Seventy-eight turbines later, I still do every one myself. Cuts to hands terminating a residential joint today.", "location": "Drone footage plus close-ups at a current job.", "length": "60 sec", "platforms": ["LinkedIn", "Meta reel", "YouTube"] },
+    { "n": "04", "title": "The Nyrstar fire response", "hook": "When cables catch fire, you're on the panel or you're not.", "treatment": "Slow pan across the HV switch room aftermath (with permission) while Caleb explains the 24-hour mobilisation, 4-night rebuild, zero incidents. Utility and commercial audience play.", "location": "Nyrstar site with sign-off, or reconstruction shots at 3 Rankine.", "length": "90 sec", "platforms": ["LinkedIn", "Meta reel"] },
+    { "n": "05", "title": "One day on the tools", "hook": "Day-in-the-life of an Earthed install.", "treatment": "60-second cut of a full install day. Panels arriving on the ute, racking up, inverter mounting, client signing off, sunset over the completed system.", "location": "Any live install with client consent.", "length": "60 to 90 sec", "platforms": ["Instagram reel", "TikTok", "YouTube short"] }
+  ],
+  "production": [
+    { "k": "Shoot days", "v": "3 across October and November" },
+    { "k": "Editing", "v": "Higgsfield + CapCut · about 2 hrs per video" },
+    { "k": "Release", "v": "1 video every 2 weeks from mid-October" },
+    { "k": "Formats", "v": "Every video cut 3 ways · vertical, horizontal, carousel" }
+  ]
+}

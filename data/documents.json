@@ -1,0 +1,78 @@
+{
+  "_schema": "Document vault. expires YYYY-MM-DD or null. Alerts fire at 90/30/7 days. link = OneDrive share URL.",
+  "base": "https://earthedhv-my.sharepoint.com/",
+  "docs": [
+    {
+      "id": "pge",
+      "name": "PGE licence 336477",
+      "entity": "EE",
+      "type": "Licence",
+      "expires": "2027-03-31",
+      "link": "",
+      "owner": "Caleb"
+    },
+    {
+      "id": "sapn",
+      "name": "SAPN accreditation",
+      "entity": "EHV",
+      "type": "Accreditation",
+      "expires": "2026-12-15",
+      "link": "",
+      "owner": "Caleb"
+    },
+    {
+      "id": "nexans",
+      "name": "Nexans jointing certification",
+      "entity": "EHV",
+      "type": "Certification",
+      "expires": "2026-11-20",
+      "link": "",
+      "owner": "Caleb"
+    },
+    {
+      "id": "pli",
+      "name": "Public liability · $20M",
+      "entity": "Shared",
+      "type": "Insurance",
+      "expires": "2027-02-01",
+      "link": "",
+      "owner": "Caleb"
+    },
+    {
+      "id": "wc",
+      "name": "Workers comp · ReturnToWorkSA",
+      "entity": "Shared",
+      "type": "Insurance",
+      "expires": "2027-06-30",
+      "link": "",
+      "owner": "Caleb"
+    },
+    {
+      "id": "cec",
+      "name": "CEC / SAA installer accreditation",
+      "entity": "EE",
+      "type": "Accreditation",
+      "expires": "2026-10-25",
+      "link": "",
+      "owner": "Caleb"
+    },
+    {
+      "id": "wl",
+      "name": "White card",
+      "entity": "Shared",
+      "type": "Licence",
+      "expires": null,
+      "link": "",
+      "owner": "Caleb"
+    },
+    {
+      "id": "vehicle",
+      "name": "Fleet insurance · Hilux + trailer",
+      "entity": "Shared",
+      "type": "Insurance",
+      "expires": "2026-12-05",
+      "link": "",
+      "owner": "Caleb"
+    }
+  ]
+}

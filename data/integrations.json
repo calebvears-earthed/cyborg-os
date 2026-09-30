@@ -1,0 +1,161 @@
+[
+  {
+    "id": "xero",
+    "name": "Xero",
+    "group": "Finance",
+    "purpose": "Bills, invoices, 12-mo income",
+    "env": [
+      "XERO_CLIENT_ID",
+      "XERO_CLIENT_SECRET",
+      "XERO_TENANT_ID",
+      "XERO_REFRESH_TOKEN"
+    ],
+    "connect": "https://developer.xero.com/app/manage",
+    "api": "api/xero-sync.js"
+  },
+  {
+    "id": "basiq",
+    "name": "NAB + Macquarie",
+    "group": "Finance",
+    "purpose": "Live balances via Basiq (CDR)",
+    "env": [
+      "BASIQ_API_KEY",
+      "BASIQ_USER_ID"
+    ],
+    "connect": "https://dashboard.basiq.io",
+    "api": "api/bank-feed.js"
+  },
+  {
+    "id": "twilio",
+    "name": "Twilio SMS",
+    "group": "Reminders",
+    "purpose": "Bill + follow-up reminders by text",
+    "env": [
+      "TWILIO_ACCOUNT_SID",
+      "TWILIO_AUTH_TOKEN",
+      "TWILIO_FROM",
+      "REMINDER_TO"
+    ],
+    "connect": "https://console.twilio.com",
+    "api": "api/reminders-send.js"
+  },
+  {
+    "id": "push",
+    "name": "Web Push",
+    "group": "Reminders",
+    "purpose": "Phone notifications from the PWA",
+    "env": [
+      "VAPID_PUBLIC_KEY",
+      "VAPID_PRIVATE_KEY"
+    ],
+    "connect": "https://vapidkeys.com",
+    "api": "api/push-subscribe.js"
+  },
+  {
+    "id": "kv",
+    "name": "Vercel KV",
+    "group": "Core",
+    "purpose": "Cross-device persistence of ticks, leads, edits",
+    "env": [
+      "KV_REST_API_URL",
+      "KV_REST_API_TOKEN"
+    ],
+    "connect": "https://vercel.com/dashboard/stores",
+    "api": "api/_store.js"
+  },
+  {
+    "id": "passcode",
+    "name": "Passcode lock",
+    "group": "Core",
+    "purpose": "Gate the dashboard and APIs",
+    "env": [
+      "DASHBOARD_PASSCODE"
+    ],
+    "connect": "https://vercel.com/dashboard",
+    "api": "api/auth.js"
+  },
+  {
+    "id": "meta",
+    "name": "Meta Ads",
+    "group": "Marketing",
+    "purpose": "Lead Ads webhook + spend",
+    "env": [
+      "META_VERIFY_TOKEN",
+      "META_PAGE_TOKEN",
+      "META_AD_ACCOUNT_ID"
+    ],
+    "connect": "https://developers.facebook.com/apps",
+    "api": "api/meta-lead-webhook.js"
+  },
+  {
+    "id": "google",
+    "name": "Google Ads",
+    "group": "Marketing",
+    "purpose": "Campaign spend + conversions",
+    "env": [
+      "GOOGLE_ADS_DEVELOPER_TOKEN",
+      "GOOGLE_ADS_CUSTOMER_ID",
+      "GOOGLE_OAUTH_REFRESH_TOKEN"
+    ],
+    "connect": "https://ads.google.com/aw/apicenter",
+    "api": "api/google-ads-webhook.js"
+  },
+  {
+    "id": "ga4",
+    "name": "Google Analytics 4",
+    "group": "Marketing",
+    "purpose": "Website form conversion rate",
+    "env": [
+      "GA4_PROPERTY_ID",
+      "GA4_SERVICE_ACCOUNT_JSON"
+    ],
+    "connect": "https://analytics.google.com",
+    "api": "api/marketing-analytics.js"
+  },
+  {
+    "id": "claude",
+    "name": "Claude",
+    "group": "Arc",
+    "purpose": "Arc · reads + writes leads, bills, events, blocks, notes via tools",
+    "env": [
+      "ANTHROPIC_API_KEY"
+    ],
+    "connect": "https://console.anthropic.com/settings/keys",
+    "api": "api/arc.js"
+  },
+  {
+    "id": "grok",
+    "name": "Grok",
+    "group": "Arc",
+    "purpose": "Arc secondary model",
+    "env": [
+      "XAI_API_KEY"
+    ],
+    "connect": "https://console.x.ai",
+    "api": "arc-agent"
+  },
+  {
+    "id": "resend",
+    "name": "Resend email",
+    "group": "Reminders",
+    "purpose": "Weekly digest + expiry alerts by email",
+    "env": [
+      "RESEND_API_KEY",
+      "DIGEST_EMAIL"
+    ],
+    "connect": "https://resend.com/api-keys",
+    "api": "api/weekly-digest.js"
+  },
+  {
+    "id": "onedrive",
+    "name": "OneDrive · Graph",
+    "group": "Documents",
+    "purpose": "Document vault live from 777 legal + finance",
+    "env": [
+      "MS_GRAPH_TOKEN",
+      "ONEDRIVE_FOLDER_ID"
+    ],
+    "connect": "https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps",
+    "api": "api/docs-expiry.js"
+  }
+]
