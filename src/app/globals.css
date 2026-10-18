@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root {
+  --plum: #513963;
+  --plum-dark: #3A2847;
+  --violet: #9303C5;
+  --void: #0A0511;
+  --void-soft: #15091F;
+  --void-elevated: #1E122A;
+  --cream: #F5F1E8;
+}
+
+html, body {
+  background: var(--void);
+  color: var(--cream);
+  font-family: 'Inter', system-ui, sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Scrollbar · plum themed */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--void-soft);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--plum);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--violet);
+}
+
+/* Selection */
+::selection {
+  background: var(--violet);
+  color: var(--cream);
+}
+
+/* Markdown rendered in chat */
+.prose-atlas {
+  color: var(--cream);
+}
+.prose-atlas h1, .prose-atlas h2, .prose-atlas h3 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-style: italic;
+  color: var(--cream);
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+.prose-atlas code {
+  font-family: 'JetBrains Mono', Menlo, monospace;
+  background: var(--void-elevated);
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #B33AE0;
+  font-size: 0.9em;
+}
+.prose-atlas pre {
+  background: var(--void-elevated);
+  padding: 12px 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  border-left: 2px solid var(--violet);
+  margin: 1em 0;
+}
+.prose-atlas pre code {
+  background: transparent;
+  padding: 0;
+  color: var(--cream);
+}
+.prose-atlas a {
+  color: var(--violet);
+  text-decoration: underline;
+}
+.prose-atlas ul, .prose-atlas ol {
+  margin: 0.5em 0;
+  padding-left: 1.5em;
+}
+
+/* Glow effect for Atlas orb */
+.atlas-orb {
+  background: radial-gradient(circle, var(--violet) 0%, var(--plum) 60%, transparent 100%);
+  animation: glow 2s ease-in-out infinite alternate;
+}
