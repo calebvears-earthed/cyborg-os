@@ -2,7 +2,7 @@
   "name": "cyborg-os-v2",
   "version": "0.1.0",
   "private": true,
-  "description": "Cyborg OS v2 · Atlas Jarvis for Earthed group · operations nervous system",
+  "description": "Cyborg OS v2 \u00b7 Atlas Jarvis for Earthed group \u00b7 operations nervous system",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,13 +11,13 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.37.0",
+    "@anthropic-ai/sdk": "^0.65.0",
     "@supabase/supabase-js": "^2.47.0",
     "next": "14.2.18",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-markdown": "^9.0.1",
-    "remark-gfm": "^4.0.0",
+    "react-markdown": "^9.0.3",
+    "remark-gfm": "^4.0.1",
     "zod": "^3.23.8"
   },
   "devDependencies": {
@@ -30,5 +30,8 @@
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.14",
     "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=18.17.0"
   }
 }
