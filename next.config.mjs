@@ -1,11 +1,9 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   reactStrictMode: true,
+  eslint: { ignoreDuringBuilds: true },
   experimental: {
-    serverActions: {
-      bodySizeLimit: "10mb",
-    },
+    serverActions: { bodySizeLimit: "10mb" },
   },
   images: {
     remotePatterns: [

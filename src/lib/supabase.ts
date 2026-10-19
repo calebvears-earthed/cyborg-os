@@ -1,21 +1,43 @@
-import { createClient } from "@supabase/supabase-js";
+import { createClient, SupabaseClient } from "@supabase/supabase-js";
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY!;
+// Lazy instantiation · env vars read at request time, not module load.
+// Prevents `next build` from blowing up when envs aren't set.
 
-// Client-safe · uses anon key · subject to RLS
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+let _supabase: SupabaseClient | null = null;
+let _supabaseAdmin: SupabaseClient | null = null;
 
-// Server-only · uses service role · bypasses RLS · NEVER expose client-side
-export const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey, {
-  auth: {
-    autoRefreshToken: false,
-    persistSession: false,
-  },
+function getUrl() {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  if (!url) throw new Error("NEXT_PUBLIC_SUPABASE_URL is not set");
+  return url;
+}
+
+export function getSupabase(): SupabaseClient {
+  if (_supabase) return _supabase;
+  const anon = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+  if (!anon) throw new Error("NEXT_PUBLIC_SUPABASE_ANON_KEY is not set");
+  _supabase = createClient(getUrl(), anon);
+  return _supabase;
+}
+
+export function getSupabaseAdmin(): SupabaseClient {
+  if (_supabaseAdmin) return _supabaseAdmin;
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!key) throw new Error("SUPABASE_SERVICE_ROLE_KEY is not set");
+  _supabaseAdmin = createClient(getUrl(), key, {
+    auth: { autoRefreshToken: false, persistSession: false },
+  });
+  return _supabaseAdmin;
+}
+
+// Back-compat exports via Proxy so existing imports keep working
+export const supabase = new Proxy({} as SupabaseClient, {
+  get: (_, prop) => (getSupabase() as any)[prop],
+});
+export const supabaseAdmin = new Proxy({} as SupabaseClient, {
+  get: (_, prop) => (getSupabaseAdmin() as any)[prop],
 });
 
-// Memory types matching the memory system taxonomy
 export type MemoryType = "user" | "project" | "feedback" | "reference";
 
 export interface Memory {
